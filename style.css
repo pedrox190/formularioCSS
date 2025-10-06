@@ -8,7 +8,7 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: "SUSE Mono", sans-serif;
-  backdrop-filter: blur(2 px);
+
 }
 
 /* ativa o flexbox modelo */
@@ -38,6 +38,7 @@ body{
  color: #fff;
  padding: 30px 40px; 
  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+ backdrop-filter: blur(10px);
 
 }
 
