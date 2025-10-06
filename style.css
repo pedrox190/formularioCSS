@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+/* deerminar valores no documeno todo */
+/* para nao aumentar a caixa conforme o conteudo, so com os valores que eu passar */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "SUSE Mono", sans-serif;
+  backdrop-filter: blur(2 px);
+}
+
+/* ativa o flexbox modelo */
+/* ajusta o conteudo de acordo com o eixo transversal */
+/* ajusta o conteudo de acordo com o eixo principal */
+/* viewport height para ter exatamente o tamanho da tela */
+/* ./ ele sempre vai achar o endereço */
+/* ajusta o tamanho para a imagem ficar linda */
+/* deixa a imagem no centro */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./imagem/wallpaper1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/*  background-color: transparent; deixa um transparente bem sutio*/
+/* padding: 30px 40px; cada px tipo se eu coloquei 2 30px é para cima e baixo e 40px é esuqerda direita */
+/* box-shadow: 0 0 10px rgba(0, 0, 0, .2);/ coloca uma sombra na caixa5 */
+.container{
+ width: 420px;
+ background-color: transparent;
+ border: 2px solid rgba(255, 255, 255, 0.2);
+ border-radius: 10px;
+ color: #fff;
+ padding: 30px 40px; 
+ box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+}
+
+/* alterando o h1 dentro do container */
+.container h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+.caixa-botao{
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+  /* muda a posição do elemento de acordo com a  minha necessidade */
+}
+/* width mexi na largura */
+/* height mexi na altura  */
+/* background-color coloquei transparente */
+/* border coloquei 2px e o solid foi para aparecer */
+/*   border-radius: 40px; para dar um circulo */
+/* outline  tirar a borda branca de quando celecionar */
+.caixa-botao input{
+  width: 100%;
+  height: 50px  ;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 40px;
+  outline: none;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.caixa-botao input::placeholder{
+  color: #686767;
+}
+
+/* movenos o icone e escolhemos onde ele deve ficar(colocamos dentro do input e tambem mudamos o tamanho do icone */
+.caixa-botao i{
+  position: absolute;
+  right: 20px;
+  top: 25%;
+  font-size: 20px;
+}
+
+/* dispaly flex faz o justify funcina */
+/* justify-content: space-between; faz um espaçamento entre eles e cola eles na tela*/
+.lembrar-senha{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* muda a cor de funda checkbox */
+.lembrar-senha label input{
+  margin-left: 5px;
+  accent-color: #fff;
+}
+
+
+.lembrar-senha a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lembrar-senha a:hover{
+  text-decoration: underline;/* faz que teja um underline quando ficar em cima do texto */
+}
+
+.login{
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-size: 1em;
+  color: #333;
+  font-weight: 600;/* deixa mais forte  a fonte */
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);/* coloca uma sombra bem sutio na caixa */
+  margin: top;
+  cursor: pointer;  
+}
+
+.login:hover{ 
+  /* muda a cor de fundo */
+  /* deixa uma borda */
+  /* muda a cor */
+  background-color: transparent;
+  border: 2PX solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.5s;
+}
+
+  /* mudamos o tamanho da fonte, colovamos no centro, e colocamos uma mergin */
+.registro{
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 15px ;
+}
+
+/* mudamos a decoração para nenhuma */
+.registro a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* colocamos underline quando passar o mouse em cima */
+.registro a:hover{
+  text-decoration: underline;
+}
